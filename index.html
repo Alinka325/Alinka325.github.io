@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космос для Алины</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #000;
+            color: white;
+        }
+        
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00aaff;
+        }
+        
+        h1 {
+            color: #00aaff;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+        
+        nav a:hover {
+            background-color: #00aaff;
+            border-radius: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+        
+        h2 {
+            color: #00aaff;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .card {
+            flex: 1;
+            min-width: 300px;
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        
+        .card h3 {
+            color: #00ffaa;
+            margin-bottom: 10px;
+        }
+        
+        .planet {
+            text-align: center;
+            margin: 20px;
+            padding: 15px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+        }
+        
+        .planet-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px auto;
+            background: radial-gradient(circle, #ffaa00, #ff5500);
+        }
+        
+        .earth { background: radial-gradient(circle, #00aaff, #0055ff); }
+        .mars { background: radial-gradient(circle, #ff5555, #aa0000); }
+        .jupiter { background: radial-gradient(circle, #ffaa55, #aa5500); }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #222;
+            color: #00aaff;
+        }
+        
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 2px solid #00aaff;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .gallery-item {
+            width: 150px;
+            height: 150px;
+            background-color: #333;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Космический мир Алины</h1>
+        <p>Сайт студентки 1 курса о космосе</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#planets">Планеты</a>
+        <a href="#stars">Звезды</a>
+        <a href="#facts">Факты</a>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <h2>Добро пожаловать!</h2>
+            <p>Я Алина, студентка первого курса. Я очень интересуюсь космосом и хочу поделиться с вами своими знаниями.</p>
+            <p>Космос - это удивительное место, полное тайн и загадок. Здесь я собрала самую интересную информацию о планетах, звездах и космических явлениях.</p>
+            
+            <div class="content">
+                <div class="card">
+                    <h3>Почему космос?</h3>
+                    <p>Космос вдохновляет меня своей красотой и бесконечностью. Изучая вселенную, я понимаю, насколько уникальна наша планета.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Моя цель</h3>
+                    <p>Поделиться знаниями о космосе с другими студентами и всеми, кто интересуется этой темой.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>О сайте</h3>
+                    <p>Этот сайт создан как учебный проект по HTML и CSS. Здесь только мои мысли и знания.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="planets">
+            <h2>Планеты Солнечной системы</h2>
+            <p>В нашей солнечной системе 8 планет. Каждая из них уникальна.</p>
+            
+            <div class="content">
+                <div class="planet">
+                    <div class="planet-img earth"></div>
+                    <h3>Земля</h3>
+                    <p>Наш дом. Единственная планета с жизнью.</p>
+                </div>
+                
+                <div class="planet">
+                    <div class="planet-img mars"></div>
+                    <h3>Марс</h3>
+                    <p>Красная планета. Возможно, там была вода.</p>
+                </div>
+                
+                <div class="planet">
+                    <div class="planet-img jupiter"></div>
+                    <h3>Юпитер</h3>
+                    <p>Самая большая планета. У него 79 спутников!</p>
+                </div>
+            </div>
+            
+            <table>
+                <tr>
+                    <th>Планета</th>
+                    <th>Расстояние от Солнца</th>
+                    <th>Год</th>
+                </tr>
+                <tr>
+                    <td>Меркурий</td>
+                    <td>58 млн км</td>
+                    <td>88 дней</td>
+                </tr>
+                <tr>
+                    <td>Венера</td>
+                    <td>108 млн км</td>
+                    <td>225 дней</td>
+                </tr>
+                <tr>
+                    <td>Земля</td>
+                    <td>150 млн км</td>
+                    <td>365 дней</td>
+                </tr>
+                <tr>
+                    <td>Марс</td>
+                    <td>228 млн км</td>
+                    <td>687 дней</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="stars">
+            <h2>Звезды и галактики</h2>
+            <p>Звезды - это огромные шары газа, которые светятся из-за ядерных реакций в их центре.</p>
+            
+            <div class="content">
+                <div class="card">
+                    <h3>Солнце</h3>
+                    <p>Наша звезда. Без нее не было бы жизни на Земле. Температура в центре - 15 миллионов градусов!</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Млечный путь</h3>
+                    <p>Наша галактика. В ней более 200 миллиардов звезд. Солнце - одна из них.</p>
+                </div>
+            </div>
+            
+            <div class="gallery">
+                <div class="gallery-item">Звездное небо</div>
+                <div class="gallery-item">Туманность</div>
+                <div class="gallery-item">Галактика</div>
+                <div class="gallery-item">Созвездия</div>
+            </div>
+        </section>
+        
+        <section id="facts">
+            <h2>Интересные факты</h2>
+            <p>Вот что я узнала о космосе:</p>
+            
+            <div class="content">
+                <div class="card">
+                    <h3>Факт 1</h3>
+                    <p>В космосе нет звука. Там полная тишина, потому что звуку нужен воздух для распространения.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Факт 2</h3>
+                    <p>Один день на Венере длится дольше, чем один год! Венере нужно 243 земных дня, чтобы обернуться вокруг себя.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Факт 3</h3>
+                    <p>Космонавты на МКС видят 16 восходов и закатов каждый день, потому что МКС облетает Землю за 90 минут.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Факт 4</h3>
+                    <p>Луна отдаляется от Земли на 4 см каждый год. Миллионы лет назад она была гораздо ближе.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Факт 5</h3>
+                    <p>В космосе металл прилипает к металлу без сварки. Это называется холодной сваркой.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Факт 6</h3>
+                    <p>Солнце составляет 99.86% массы всей Солнечной системы.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2025 Алина, студентка 1 курса</p>
+        <p>Сайт создан с помощью HTML и CSS</p>
+    </footer>
+</body>
+</html>
